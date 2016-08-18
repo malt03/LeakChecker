@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LeakChecker_Example' do
+  pod 'LeakChecker', :path => '../'
+
+  target 'LeakChecker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
