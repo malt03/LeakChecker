@@ -1,0 +1,16 @@
+PODS:
+  - LeakChecker (0.1.0)
+
+DEPENDENCIES:
+  - LeakChecker (from `../`)
+
+EXTERNAL SOURCES:
+  LeakChecker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LeakChecker: 2ab07482ce43949e07beef8aaf5d36c3489a4b32
+
+PODFILE CHECKSUM: f1963b386084ab254ef5b1b7cc0e1b5f74f3070a
+
+COCOAPODS: 1.0.1

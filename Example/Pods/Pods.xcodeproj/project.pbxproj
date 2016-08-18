@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1576F2BAB89D9337B4A3EECF733AEDB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		2A3EFFC7B2C700427767F578678A8D72 /* LeakChecker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3430DC98ABE426EE0384F08989D191AB /* LeakChecker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA56F98B10E60D545DE264B119B39A5 /* Pods-LeakChecker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5AD56126307E84F25A245A36BA90FE /* Pods-LeakChecker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54097393656305EDA49FBEE5693BB26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		70B8998C0B28B9DD7B0F6D3326FD6796 /* LeakChecker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E31B2F998B61DC88898555C30152F /* LeakChecker-dummy.m */; };
+		A8520497D10CCBE9A3C17438090F7D29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		BBEDEF1ED068412BFB37164978573F70 /* Pods-LeakChecker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3AB9AD8CBB23AC6D990138E02E7DB6 /* Pods-LeakChecker_Tests-dummy.m */; };
+		CF3BFB9481E2E7A23EAD433DF1BF2CCE /* Pods-LeakChecker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F766EDD1C8726F8E4B700E77F8E876DA /* Pods-LeakChecker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED8EDA1E1D658B5800D74CF1 /* LeakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8EDA1D1D658B5800D74CF1 /* LeakChecker.swift */; };
+		ED8EDA201D658B8A00D74CF1 /* WeakHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8EDA1F1D658B8A00D74CF1 /* WeakHolder.swift */; };
+		FD857A5EFF67BF55CF5A8670688B5438 /* Pods-LeakChecker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A223559FF3AD68D3EA61FF2A2076FB14 /* Pods-LeakChecker_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58074C6BAFA924083ABB41F1AF6004C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82C2977986302E91C0552A2191D81EA2;
+			remoteInfo = LeakChecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1468B6A0D4D54FFACC871F464769C611 /* Pods-LeakChecker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeakChecker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1D3AA68D0E5738B885BD066C41EFD394 /* LeakChecker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LeakChecker.modulemap; sourceTree = "<group>"; };
+		2B9F94FBECF8E0BECADA9361CA2FF200 /* Pods_LeakChecker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeakChecker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3430DC98ABE426EE0384F08989D191AB /* LeakChecker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeakChecker-umbrella.h"; sourceTree = "<group>"; };
+		51112099AA357E603E4D6E507C7633A5 /* Pods_LeakChecker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeakChecker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5931BE7052370FB7CF5A6E06C3AD8D1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E5AD56126307E84F25A245A36BA90FE /* Pods-LeakChecker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeakChecker_Example-umbrella.h"; sourceTree = "<group>"; };
+		696279CB2FD6594210F484992A161C38 /* Pods-LeakChecker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeakChecker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A2174426C0FE183A6383FB231A1EAD1 /* LeakChecker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeakChecker.xcconfig; sourceTree = "<group>"; };
+		7A68790A85FBAD334F9E0D65AD7E99CB /* LeakChecker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeakChecker-prefix.pch"; sourceTree = "<group>"; };
+		83A3ACE2AFB2E4B93392B5066048F5DE /* Pods-LeakChecker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeakChecker_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		92C505BEC9F11831588C38F9E9813E6D /* Pods-LeakChecker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeakChecker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A223559FF3AD68D3EA61FF2A2076FB14 /* Pods-LeakChecker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeakChecker_Example-dummy.m"; sourceTree = "<group>"; };
+		A8AB11228193F2FEE0EB96ACF1AA006D /* LeakChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeakChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4E31B2F998B61DC88898555C30152F /* LeakChecker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LeakChecker-dummy.m"; sourceTree = "<group>"; };
+		B96B860AB7BFF3500F91C1661BF9C5F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD3AB9AD8CBB23AC6D990138E02E7DB6 /* Pods-LeakChecker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeakChecker_Tests-dummy.m"; sourceTree = "<group>"; };
+		C41A67D171ED862A9BE8997C39306BED /* Pods-LeakChecker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeakChecker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CC3861892CFB46F519288AB4C27A8777 /* Pods-LeakChecker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeakChecker_Example-resources.sh"; sourceTree = "<group>"; };
+		CCEFE119A16CEE7DCF9627FFC0E6F60F /* Pods-LeakChecker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeakChecker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D263D2B3CE5583D4C18B9F6065631453 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FF6FC68ABEF87F39EC126C8AD47FDC /* Pods-LeakChecker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeakChecker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D8F38B564589F3F256EE8FDFD5CA95C5 /* Pods-LeakChecker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LeakChecker_Example.modulemap"; sourceTree = "<group>"; };
+		DF5C011E9965A348FC821828F991C286 /* Pods-LeakChecker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeakChecker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E63C8F8317827D9C11EBCC49EEBD29EC /* Pods-LeakChecker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeakChecker_Tests-resources.sh"; sourceTree = "<group>"; };
+		ED8EDA1D1D658B5800D74CF1 /* LeakChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeakChecker.swift; sourceTree = "<group>"; };
+		ED8EDA1F1D658B8A00D74CF1 /* WeakHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakHolder.swift; sourceTree = "<group>"; };
+		EF44ED13D18BD8E7A6DF1CD2A241B52C /* Pods-LeakChecker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeakChecker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F766EDD1C8726F8E4B700E77F8E876DA /* Pods-LeakChecker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeakChecker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FABD2D5F407265FF476BAF5A0602EAE7 /* Pods-LeakChecker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeakChecker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FF1A550FE4966C7710F74804291BCBB7 /* Pods-LeakChecker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LeakChecker_Tests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38AC5B47BAF2CB631A2CB986E4211209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8520497D10CCBE9A3C17438090F7D29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F9DA357EFB371BBDB1AB56D3D3022D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54097393656305EDA49FBEE5693BB26D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D511B4FA9FA79883CD657EE173B530E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1576F2BAB89D9337B4A3EECF733AEDB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AC56FE561DB79252BCE119DF4C220AB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A2226A226E45ED7DC1EADDE35C98EF7 /* Pods-LeakChecker_Example */,
+				CE3B4A3382F79487D9BD34A35DE33CFA /* Pods-LeakChecker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3A2226A226E45ED7DC1EADDE35C98EF7 /* Pods-LeakChecker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D263D2B3CE5583D4C18B9F6065631453 /* Info.plist */,
+				D8F38B564589F3F256EE8FDFD5CA95C5 /* Pods-LeakChecker_Example.modulemap */,
+				696279CB2FD6594210F484992A161C38 /* Pods-LeakChecker_Example-acknowledgements.markdown */,
+				92C505BEC9F11831588C38F9E9813E6D /* Pods-LeakChecker_Example-acknowledgements.plist */,
+				A223559FF3AD68D3EA61FF2A2076FB14 /* Pods-LeakChecker_Example-dummy.m */,
+				D6FF6FC68ABEF87F39EC126C8AD47FDC /* Pods-LeakChecker_Example-frameworks.sh */,
+				CC3861892CFB46F519288AB4C27A8777 /* Pods-LeakChecker_Example-resources.sh */,
+				5E5AD56126307E84F25A245A36BA90FE /* Pods-LeakChecker_Example-umbrella.h */,
+				FABD2D5F407265FF476BAF5A0602EAE7 /* Pods-LeakChecker_Example.debug.xcconfig */,
+				EF44ED13D18BD8E7A6DF1CD2A241B52C /* Pods-LeakChecker_Example.release.xcconfig */,
+			);
+			name = "Pods-LeakChecker_Example";
+			path = "Target Support Files/Pods-LeakChecker_Example";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4D258C45D3E4EF047DEFA61811C7FEF9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ED8EDA1D1D658B5800D74CF1 /* LeakChecker.swift */,
+				ED8EDA1F1D658B8A00D74CF1 /* WeakHolder.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4FA792E1177F577228ED9C149A611BAF /* LeakChecker */ = {
+			isa = PBXGroup;
+			children = (
+				ADE96A0928F9880D82520729EEC8CD07 /* LeakChecker */,
+				A9ACA642B04334C226B6241F9ABF4D38 /* Support Files */,
+			);
+			name = LeakChecker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F9FF83326758B5225059AE523B7CBD98 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B9174BBFA095521032D40845A1AA1188 /* Products */,
+				1AC56FE561DB79252BCE119DF4C220AB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A9ACA642B04334C226B6241F9ABF4D38 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B96B860AB7BFF3500F91C1661BF9C5F8 /* Info.plist */,
+				1D3AA68D0E5738B885BD066C41EFD394 /* LeakChecker.modulemap */,
+				6A2174426C0FE183A6383FB231A1EAD1 /* LeakChecker.xcconfig */,
+				AE4E31B2F998B61DC88898555C30152F /* LeakChecker-dummy.m */,
+				7A68790A85FBAD334F9E0D65AD7E99CB /* LeakChecker-prefix.pch */,
+				3430DC98ABE426EE0384F08989D191AB /* LeakChecker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LeakChecker";
+			sourceTree = "<group>";
+		};
+		ADE96A0928F9880D82520729EEC8CD07 /* LeakChecker */ = {
+			isa = PBXGroup;
+			children = (
+				4D258C45D3E4EF047DEFA61811C7FEF9 /* Classes */,
+			);
+			path = LeakChecker;
+			sourceTree = "<group>";
+		};
+		B9174BBFA095521032D40845A1AA1188 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8AB11228193F2FEE0EB96ACF1AA006D /* LeakChecker.framework */,
+				51112099AA357E603E4D6E507C7633A5 /* Pods_LeakChecker_Example.framework */,
+				2B9F94FBECF8E0BECADA9361CA2FF200 /* Pods_LeakChecker_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE3B4A3382F79487D9BD34A35DE33CFA /* Pods-LeakChecker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5931BE7052370FB7CF5A6E06C3AD8D1D /* Info.plist */,
+				FF1A550FE4966C7710F74804291BCBB7 /* Pods-LeakChecker_Tests.modulemap */,
+				DF5C011E9965A348FC821828F991C286 /* Pods-LeakChecker_Tests-acknowledgements.markdown */,
+				C41A67D171ED862A9BE8997C39306BED /* Pods-LeakChecker_Tests-acknowledgements.plist */,
+				BD3AB9AD8CBB23AC6D990138E02E7DB6 /* Pods-LeakChecker_Tests-dummy.m */,
+				83A3ACE2AFB2E4B93392B5066048F5DE /* Pods-LeakChecker_Tests-frameworks.sh */,
+				E63C8F8317827D9C11EBCC49EEBD29EC /* Pods-LeakChecker_Tests-resources.sh */,
+				F766EDD1C8726F8E4B700E77F8E876DA /* Pods-LeakChecker_Tests-umbrella.h */,
+				CCEFE119A16CEE7DCF9627FFC0E6F60F /* Pods-LeakChecker_Tests.debug.xcconfig */,
+				1468B6A0D4D54FFACC871F464769C611 /* Pods-LeakChecker_Tests.release.xcconfig */,
+			);
+			name = "Pods-LeakChecker_Tests";
+			path = "Target Support Files/Pods-LeakChecker_Tests";
+			sourceTree = "<group>";
+		};
+		F9FF83326758B5225059AE523B7CBD98 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FA792E1177F577228ED9C149A611BAF /* LeakChecker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		17AD5C379514F03C59789785D9B0AE93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA56F98B10E60D545DE264B119B39A5 /* Pods-LeakChecker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A01CA97DDE9F3927AADC1DEFFE01BE16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3EFFC7B2C700427767F578678A8D72 /* LeakChecker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CCEEEEEA56D516062703DC1ED9FDF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3BFB9481E2E7A23EAD433DF1BF2CCE /* Pods-LeakChecker_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24EA26C2ABD982BF5D167324188F23CF /* Pods-LeakChecker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E5F72AF5A0EE990AEBCB5D8DAC3E14E /* Build configuration list for PBXNativeTarget "Pods-LeakChecker_Example" */;
+			buildPhases = (
+				A79CC6460F21DABA9C3B12BC8AC42269 /* Sources */,
+				38AC5B47BAF2CB631A2CB986E4211209 /* Frameworks */,
+				17AD5C379514F03C59789785D9B0AE93 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B345272EC40D3559439390556A7560F /* PBXTargetDependency */,
+			);
+			name = "Pods-LeakChecker_Example";
+			productName = "Pods-LeakChecker_Example";
+			productReference = 51112099AA357E603E4D6E507C7633A5 /* Pods_LeakChecker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		82C2977986302E91C0552A2191D81EA2 /* LeakChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 647209F235451673D90F0B23D685A3B0 /* Build configuration list for PBXNativeTarget "LeakChecker" */;
+			buildPhases = (
+				DABA40E2077E3098BF391AD242D80B89 /* Sources */,
+				D511B4FA9FA79883CD657EE173B530E3 /* Frameworks */,
+				A01CA97DDE9F3927AADC1DEFFE01BE16 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeakChecker;
+			productName = LeakChecker;
+			productReference = A8AB11228193F2FEE0EB96ACF1AA006D /* LeakChecker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4326ACF5BE72AEEEC551D6B29B362CB /* Pods-LeakChecker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 357E6047D2FDE78D9A10E24FDC4281CA /* Build configuration list for PBXNativeTarget "Pods-LeakChecker_Tests" */;
+			buildPhases = (
+				1082E923D84C08B53EBC0647706DA6CC /* Sources */,
+				75F9DA357EFB371BBDB1AB56D3D3022D /* Frameworks */,
+				D2CCEEEEEA56D516062703DC1ED9FDF9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LeakChecker_Tests";
+			productName = "Pods-LeakChecker_Tests";
+			productReference = 2B9F94FBECF8E0BECADA9361CA2FF200 /* Pods_LeakChecker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B9174BBFA095521032D40845A1AA1188 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82C2977986302E91C0552A2191D81EA2 /* LeakChecker */,
+				24EA26C2ABD982BF5D167324188F23CF /* Pods-LeakChecker_Example */,
+				F4326ACF5BE72AEEEC551D6B29B362CB /* Pods-LeakChecker_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1082E923D84C08B53EBC0647706DA6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBEDEF1ED068412BFB37164978573F70 /* Pods-LeakChecker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79CC6460F21DABA9C3B12BC8AC42269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD857A5EFF67BF55CF5A8670688B5438 /* Pods-LeakChecker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA40E2077E3098BF391AD242D80B89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8EDA1E1D658B5800D74CF1 /* LeakChecker.swift in Sources */,
+				70B8998C0B28B9DD7B0F6D3326FD6796 /* LeakChecker-dummy.m in Sources */,
+				ED8EDA201D658B8A00D74CF1 /* WeakHolder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B345272EC40D3559439390556A7560F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeakChecker;
+			target = 82C2977986302E91C0552A2191D81EA2 /* LeakChecker */;
+			targetProxy = 58074C6BAFA924083ABB41F1AF6004C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09E1CCD9F4D20135E0AEFF4EFA2EAAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF44ED13D18BD8E7A6DF1CD2A241B52C /* Pods-LeakChecker_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeakChecker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeakChecker_Example/Pods-LeakChecker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LeakChecker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C164749C17430E6EF613F77A9B95CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A2174426C0FE183A6383FB231A1EAD1 /* LeakChecker.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LeakChecker/LeakChecker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeakChecker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeakChecker/LeakChecker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LeakChecker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0F2728F3BB95E367B30EC2D34D749E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCEFE119A16CEE7DCF9627FFC0E6F60F /* Pods-LeakChecker_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeakChecker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeakChecker_Tests/Pods-LeakChecker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LeakChecker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7DFCBBF35F99C603D6D312AC726E67E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABD2D5F407265FF476BAF5A0602EAE7 /* Pods-LeakChecker_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeakChecker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeakChecker_Example/Pods-LeakChecker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LeakChecker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA88265E47FA5DDF881E81B837B337C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A2174426C0FE183A6383FB231A1EAD1 /* LeakChecker.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LeakChecker/LeakChecker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeakChecker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeakChecker/LeakChecker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LeakChecker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DEA773239DA63F44681750A0E89458FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1468B6A0D4D54FFACC871F464769C611 /* Pods-LeakChecker_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeakChecker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeakChecker_Tests/Pods-LeakChecker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LeakChecker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		357E6047D2FDE78D9A10E24FDC4281CA /* Build configuration list for PBXNativeTarget "Pods-LeakChecker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2728F3BB95E367B30EC2D34D749E20 /* Debug */,
+				DEA773239DA63F44681750A0E89458FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		647209F235451673D90F0B23D685A3B0 /* Build configuration list for PBXNativeTarget "LeakChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA88265E47FA5DDF881E81B837B337C6 /* Debug */,
+				0C164749C17430E6EF613F77A9B95CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E5F72AF5A0EE990AEBCB5D8DAC3E14E /* Build configuration list for PBXNativeTarget "Pods-LeakChecker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DFCBBF35F99C603D6D312AC726E67E1 /* Debug */,
+				09E1CCD9F4D20135E0AEFF4EFA2EAAA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
